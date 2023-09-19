@@ -1,0 +1,40 @@
+body{
+    background-color: black;
+}
+#uno{
+    border: solid 4px gold;
+    border-radius:10px;
+    background-color: bisque;
+    /*display: flex;
+    flex:1;
+    flex-direction: column;
+    border: dotted 4px red;*/
+    /*height: 1rem;*/
+    
+}
+#dos{
+    background-color: darkblue;
+    /*display: flex;
+    flex:1;
+    flex-direction: column;
+    height:1rem;*/
+    border: solid 4px rgb(23, 46, 161);
+    border-radius:10px;
+}
+#tres{
+    /*background-color: crimson;*/
+    /*display: flex;
+    flex:1;
+    flex-direction: column;
+    height: 1rem;*/
+    border: solid 4px rgb(124, 9, 9);
+    border-radius:10px;
+     
+}
+#section{
+     padding: 10px;
+     margin: 10px;
+     border: solid 1 px black;
+     border-radius: 10 px;
+     background-color:coral; 
+}

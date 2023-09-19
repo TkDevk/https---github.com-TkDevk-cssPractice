@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+@import url('/cssGrid/cards.css');
+@import url('/cssGrid/navBarSide.css');
+
+/*Importo libreria y mis otros archivos CSS*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*Guia para maquetear*/
+
+html{
+    height: 100%;
+}
+
+
+body > * {
+    border: 2px black solid;
+    width: 100%;
+    text-align: center;
+}
+
+/*Declaro colores (desde el :root)*/
+
+:root{
+    --color1: #fff;
+    --color2: #fff;
+    --color3: #fff;
+    --color4: #fff;
+
+}
+
+/*Creo grilla en todo el body*/
+
+body{
+    display: grid;
+    min-height: 100vh;
+    gap: 10px;
+    /*grid-template-areas: */
+    grid-template-areas: 
+      "header"
+      "featuresbar"
+      "sidebar"
+      "main"
+      "footer";
+}
+
+header{
+    grid-area: header;
+}
+nav{
+    grid-area: sidebar;
+    border-bottom-right-radius: 40px;
+}
+
+section{
+    grid-area: featuresbar;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
+
+/*Responsive, por ahora pc*/
+
+@media (min-width: 900px){
+    body{
+        grid-template:
+        "header   header"        100px
+        "sidebar  featuresbar"   30px
+        "sidebar  main"          auto
+        "footer   footer"        100px/
+  /*Tengo que acomodar sidebar, then*/  
+         200px    auto /*dos columnas*/
+
+        ;
+    }
+}
